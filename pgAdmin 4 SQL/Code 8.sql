@@ -1,0 +1,33 @@
+SELECT
+    data_source,
+    appropriation_account_balances_id,
+    budget_authority_unobligated_balance_brought_forward_fyb,
+    adjustments_to_unobligated_balance_brought_forward_cpe,
+    budget_authority_appropriated_amount_cpe,
+    borrowing_authority_amount_total_cpe,
+    contract_authority_amount_total_cpe,
+    spending_authority_from_offsetting_collections_amount_cpe,
+    other_budgetary_resources_amount_cpe,
+    total_budgetary_resources_amount_cpe,
+    gross_outlay_amount_by_tas_cpe,
+    deobligations_recoveries_refunds_by_tas_cpe,
+    unobligated_balance_cpe,
+    status_of_budgetary_resources_total_cpe,
+    obligations_incurred_total_by_tas_cpe,
+    drv_appropriation_availability_period_start_date,
+    drv_appropriation_availability_period_end_date,
+    drv_appropriation_account_expired_status,
+    drv_obligations_unpaid_amount,
+    drv_other_obligated_amount,
+    reporting_period_start,
+    reporting_period_end,
+    last_modified_date,
+    certified_date,
+    create_date,
+    update_date,
+    final_of_fy,
+    submission_id,
+    treasury_account_identifier
+FROM 
+    public.appropriation_account_balances
+LIMIT 20;
